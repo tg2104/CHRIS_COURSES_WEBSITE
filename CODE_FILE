@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>course website</title>
+        <style>
+            .headerbgcolour
+            {
+                background-color: #121826;
+            }
+            .text-white
+            {
+                color: white;
+            }
+            body
+            {
+                margin: 0px;
+                font-family: "Lato", sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                text-rendering: optimizeLegibility;
+
+            }
+            .justify-between {
+                justify-content: space-between;
+            }
+            .items-center{
+                align-items: center;
+            }
+            .py{
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+            .px{
+                padding-right: 16px;
+                padding-left: 16px;
+            }
+            .lato-regular {
+                font-family: "Lato", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .no-underline{
+                text-decoration: none;
+            }
+            .button-login{
+                color: #FFFFFF;
+                background-color: #539D98;
+                border-radius: 100px;
+            }
+            .button-font{
+                font-family: "Lato", sans-serif;
+            }
+            .button-border{
+                border: none;
+            }
+            .object-cover{
+                object-fit: cover;
+            }
+            .text-teal{
+                color: #90CAC7;
+            }
+            .h1{
+                margin: 0;
+            }
+            .p{
+                margin: 0;
+            }
+            .bg-white{
+                background-color: white;
+            }
+            .absolute{
+                position: absolute;
+            }
+            .relative{
+                position: relative;
+            }
+            .z-10{
+                z-index: 10;
+            }
+            .mx-auto{
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .h-385px{
+                height: 385px;
+            }
+            .md\:h-689px{
+                height: 689px;
+            }
+            @media(min-width: 640px) {
+                .sm\:h-689px {
+                    height: 689px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header class="flex justify-between relative z-20 mx-auto" style="padding: 18px 12px;max-width: 1200px ">
+            <div class="flex justify-between items-center m">
+                <img src="./IMAGES/logo.svg" class="py px">
+                <nav class="hidden md:block">
+                    <a href="" class="text-white py px no-underline">Prices</a>
+                    <a href="" class="text-white py px no-underline">Courses</a>
+                    <a href="" class="text-white py px no-underline">Blog</a>
+                    <a href="" class="text-white py px no-underline">Forum</a>
+                </nav>
+            </div>
+            <div class="items-center hidden md:flex">
+                <a href="" class="text-white px py no-underline" style="margin-right: 25px">Login</a>
+                <button class="py px bold button-font button-border button-login">SIGN UP</button>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6  md:hidden text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+
+        </header>
+        <section class="relative" style="">
+<!--            <img src="IMAGES/planet%20sattelite%20image.png">-->
+            <div class="absolute h-385px md:h-689px"style="top:-95px">
+                <div class="bg-black z-10 absolute inset-0 opacity-50 md:hidden"></div>
+                <video loop="loop"
+                       autoplay="autoplay"
+                       playsinline=""
+                       muted="muted"
+                       class="w-full h-full object-cover ">
+                    <source src="./IMAGES/galaxy.b6c8fb5.mp4"
+                    ></video>
+            </div>
+            <div style="max-width: 1200px" class="mx-auto md:pt-32 px-6">
+                <div class="relative z-10 " style="max-width: 538px;">
+                    <h1 class="text-white h1 font-bold leading-none" style="font-size: 43px;">
+                        Turbocharge your <span class="text-teal">development career</span>
+                    </h1>
+                    <p class="text-white p" style="max-width: 449px;margin-top:30px;font-size: 20px">
+                        Chris Courses provides students and professionals a college-level web development education.
+                    </p>
+                    <button  class="bg-white px py w-full md:w-auto" style="margin-top: 28px; border-radius: 5px;color:#539D98;border: none;">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
