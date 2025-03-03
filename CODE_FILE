@@ -91,7 +91,7 @@
                 height: 385px;
             }
             .md\:h-689px{
-                height: 689px;
+                height: 764px;
             }
             @media(min-width: 640px) {
                 .sm\:h-689px {
